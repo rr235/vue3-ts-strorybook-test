@@ -10,7 +10,14 @@ import { useCssModule, defineComponent } from "vue";
 export default defineComponent({
   name: "Button",
 
-  props: {},
+  props: {
+    variant: {
+      type: String, // Dark, Light
+    },
+    size: {
+      type: String, // Large, Small
+    },
+  },
 
   setup() {
     const style = useCssModule();

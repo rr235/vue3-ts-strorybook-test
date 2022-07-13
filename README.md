@@ -1,6 +1,4 @@
-# design-system-base-setup-3
-
-## Project setup
+# Project setup
 
 ```
 yarn install
@@ -9,13 +7,7 @@ yarn install
 ### Run Storybook
 
 ```
-yarn storybook
-```
-
-### Compiles and minifies for production
-
-```
-yarn build
+yarn start
 ```
 
 ### Run your unit tests
@@ -24,7 +16,7 @@ yarn build
 yarn test:unit
 ```
 
-### Lints and fixes files
+### Check linting issues
 
 ```
 yarn lint
@@ -32,7 +24,16 @@ yarn lint
 
 # Task
 
-Create a Button component
+- Modify the Button component to have
+  - Variations
+    - Dark
+    - Light
+  - Sizes
+    - Large
+    - Small
+- Add type validation for `variation` and `size` props
+
+> Button should look more or less the same a shown in images below. Fell free to add any css properties as you please to achieve the desired look.
 
 ## Dark Large
 

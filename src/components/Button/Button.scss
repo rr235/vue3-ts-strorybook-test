@@ -1,16 +1,45 @@
+@import "../../styles/variables";
+
 .button {
+  border-radius: 100px;
+  text-align: center;
+  vertical-align: center;
+  cursor: pointer;
+  border: 3px solid white;
+
+  &.dark {
+    background: black;
+    color: #fdfdfd;
+  }
+  &.light {
+    background: white;
+    color: #151515;
+  }
+
+  &.large {
+    padding: 0 30px;
+    height: 64px;
+    font-size: 1.2rem
+  }
+  &.small {
+    padding: 0 20px;
+    height: 48px;
+    font-size: 0.8rem
+  }
+
+  &:hover {
+    opacity: 0.7975;
+  }
+  &.pressed:hover {
+    opacity: 0.54;
+  }
+  &:focus:not(.pressed) {
+    border: 3px solid $blue
+  }
+  &:disabled {
+    &:hover {
+      cursor: not-allowed;
+    }
+    opacity: 0.2515;
+  }
 }
-
-/*
-Dark
-color - #000
-
-Light
-color - #fff
-
-Large
-height - 64px
-
-Small
-height - 48px
-*/
